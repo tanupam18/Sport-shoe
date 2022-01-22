@@ -15,36 +15,44 @@
 ## File Structure
 
 ```
-src
-├── main
-│   ├── java
-│   │   └── com
-│   │       └── api
-│   │           └── sportyShoes
-│   │               ├── SportyShoes.java
-│   │               ├── config
-│   │               │   ├── SpringSecurityConfig.java
-│   │               │   └── SwaggerConfig.java
-│   │               ├── controller
-│   │               │   ├── CRUDController.java
-│   │               │   └── SearchController.java
-│   │               ├── exceptionHandler
-│   │               │   └── BusinessException.java
-│   │               ├── model
-│   │               │   ├── PurchaseReport.java
-│   │               │   └── Shoe.java
-│   │               ├── repository
-│   │               │   ├── PurchaseReportRepository.java
-│   │               │   └── ShoesRepository.java
-│   │               └── service
-│   │                   ├── SportyShoesService.java
-│   │                   └── impl
-│   │                       └── SportyShoesServiceImpl.java
-│   └── resources
-│       └── application.properties
-└── test
-    ├── java
-    └── resources
+  |-- src
+   |   |-- main
+   |   |   |-- java
+   |   |   |   |-- com
+   |   |   |   |   |-- company
+   |   |   |   |   |   |-- name
+   |   |   |   |   |   |   |-- shoes
+   |   |   |   |   |   |   |   |-- sporty
+   |   |   |   |   |   |   |   |   |-- SportShoe.java
+   |   |   |   |   |   |   |   |   |-- config
+   |   |   |   |   |   |   |   |   |   |-- SpringSecurityConfig.java
+   |   |   |   |   |   |   |   |   |   |-- SwaggerConfig.java
+   |   |   |   |   |   |   |   |   |-- controller
+   |   |   |   |   |   |   |   |   |   |-- CRUDController.java
+   |   |   |   |   |   |   |   |   |   |-- SearchController.java
+   |   |   |   |   |   |   |   |   |-- exceptionHandler
+   |   |   |   |   |   |   |   |   |   |-- BusinessException.java
+   |   |   |   |   |   |   |   |   |-- model
+   |   |   |   |   |   |   |   |   |   |-- PurchaseReport.java
+   |   |   |   |   |   |   |   |   |   |-- Shoe.java
+   |   |   |   |   |   |   |   |   |-- repository
+   |   |   |   |   |   |   |   |   |   |-- PurchaseReportRepository.java
+   |   |   |   |   |   |   |   |   |   |-- ShoesRepository.java
+   |   |   |   |   |   |   |   |   |-- service
+   |   |   |   |   |   |   |   |   |   |-- SportyShoesService.java
+   |   |   |   |   |   |   |   |   |   |-- impl
+   |   |   |   |   |   |   |   |   |   |   |-- SportyShoesServiceImpl.java
+   |   |   |-- resources
+   |   |   |   |-- application.properties
+   |-- target
+   |   |-- classes
+   |   |   |-- META-INF
+   |   |   |   |-- MANIFEST.MF
+   |   |   |   |-- maven
+   |   |   |   |   |-- com.api.sportyshoes
+   |   |   |   |   |   |-- sporty_shoes
+   |   |   |   |   |   |   |-- pom.properties
+   |   |   |   |   |   |   |-- pom.xml
 
 16 directories, 13 files
 ```
@@ -63,9 +71,3 @@ Current Implementation relies simply on String for storing order list.
 It can be extended to utilize many-to-many relationship b/w Shoe and PurchaseReport Entities.
 
 Also for admin authentication spring-security-starter has been used with credentials saved in `application.properties` file.
-
-## Docs
-For complete docs please use the docs folder in project directory.
-
-Or Visit:[Docs Website](https://manish-baghel.github.io/sporty_shoes/)
-‰

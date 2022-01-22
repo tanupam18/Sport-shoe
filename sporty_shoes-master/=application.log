@@ -559,3 +559,26 @@ org.springframework.security.web.firewall.RequestRejectedException: The request 
 
 2022-01-22 16:26:35.848  WARN 6268 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "1970-01-01"]
 2022-01-22 18:17:31.817  WARN 6268 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m33s934ms148µs100ns).
+2022-01-22 19:25:14.853  INFO 19124 --- [main] com.company.name.shoes.sporty.SportShoe  : Starting SportShoe on DESKTOP-8K5KNIE with PID 19124 (C:\Users\Raven\Downloads\sporty_shoes-master\sporty_shoes-master\target\classes started by Raven in C:\Users\Raven\Downloads\sporty_shoes-master\sporty_shoes-master)
+2022-01-22 19:25:14.856  INFO 19124 --- [main] com.company.name.shoes.sporty.SportShoe  : No active profile set, falling back to default profiles: default
+2022-01-22 19:25:16.069  INFO 19124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 19:25:16.159  INFO 19124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 2 JPA repository interfaces.
+2022-01-22 19:25:17.083  INFO 19124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 19:25:17.095  INFO 19124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 19:25:17.095  INFO 19124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-01-22 19:25:17.217  INFO 19124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 19:25:17.218  INFO 19124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2296 ms
+2022-01-22 19:25:17.435  INFO 19124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 19:25:17.510  INFO 19124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-01-22 19:25:17.688  INFO 19124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-01-22 19:25:17.814  INFO 19124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-22 19:25:18.036  INFO 19124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-22 19:25:18.056  INFO 19124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-01-22 19:25:18.766  INFO 19124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 19:25:18.772  INFO 19124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 19:25:18.822  WARN 19124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 19:25:19.904  INFO 19124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@367fbb28, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d38a81d, org.springframework.security.web.header.HeaderWriterFilter@311453ab, org.springframework.security.web.authentication.logout.LogoutFilter@594f508f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3da30ce5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d7c4fcb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79454d8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54ddd7e4, org.springframework.security.web.session.SessionManagementFilter@6785786d, org.springframework.security.web.access.ExceptionTranslationFilter@5c41f6a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@670aac24]
+2022-01-22 19:25:19.933  INFO 19124 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-01-22 19:25:20.075  INFO 19124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-22 19:25:20.272  INFO 19124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-01-22 19:25:20.300  INFO 19124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
